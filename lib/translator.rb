@@ -20,5 +20,5 @@ end
 
 def get_english_meaning(path, emoticon)
   library = load_library
-  find
+  library.select
 end
