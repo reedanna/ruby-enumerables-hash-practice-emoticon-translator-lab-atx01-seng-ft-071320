@@ -20,7 +20,7 @@ end
 
 def get_english_meaning(path, emoticon)
   library = load_library(path)
-  library[:japanese].key(emoticon)
+  
 end
 
 get_english_meaning("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
