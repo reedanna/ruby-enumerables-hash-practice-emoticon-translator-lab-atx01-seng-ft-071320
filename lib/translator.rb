@@ -1,11 +1,11 @@
 # require modules here
 require "yaml"
 
-def load_library
+def load_library(path)
   # code goes here
-  library = YAML.load_file('lib/emoticons.yml')
+  library = YAML.load_file(path)
   new_library = {}
-  #do what i did with the pigeons to rearrange stuff here
+
   library.each do |key, value|
     new_library[key] = {
       english: library[key][0],
