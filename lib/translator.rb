@@ -4,10 +4,11 @@ require "yaml"
 def load_library
   # code goes here
   library = YAML.load_file('lib/emoticons.yml')
+  new_library = {}
   #do what i did with the pigeons to rearrange stuff here
   library.each do |key, value|
-    library[key][:english] = library[key][0]
-    library[key][:japanese] = library[key][1]
+    new_library[key][:english] = library[key][0]
+    new_library[key][:japanese] = library[key][1]
   end
   print library
 end
