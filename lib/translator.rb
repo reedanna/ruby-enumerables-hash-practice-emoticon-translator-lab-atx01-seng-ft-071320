@@ -22,7 +22,7 @@ def get_english_meaning(path, emoticon)
   library = load_library(path)
   meaning = ""
   library.each do |key, value|
-    library[value].each do
+    library[value].value?
       
     end
   end
