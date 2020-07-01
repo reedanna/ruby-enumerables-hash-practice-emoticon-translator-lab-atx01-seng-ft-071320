@@ -14,12 +14,6 @@ def load_library(path)
   new_library
 end
 
-def get_japanese_emoticon(path, emoticon)
-  # code goes here
-  library = load_library(path)
-  meaning = ""
-end
-
 def get_english_meaning(path, emoticon)
   library = load_library(path)
   meaning = "Sorry, that emoticon was not found"
@@ -29,4 +23,11 @@ def get_english_meaning(path, emoticon)
     end
   end
   meaning
+end
+
+def get_japanese_emoticon(path, emoticon)
+  # code goes here
+  library = load_library(path)
+  meaning = get_english_meaning(path, emoticon)
+  library[meaning][:english]
 end
