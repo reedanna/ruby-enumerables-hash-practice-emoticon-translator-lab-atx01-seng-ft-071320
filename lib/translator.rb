@@ -12,7 +12,7 @@ def load_library
       japanese: library[key][1]
     }
   end
-  print library
+  print new_library
 end
 
 def get_japanese_emoticon
