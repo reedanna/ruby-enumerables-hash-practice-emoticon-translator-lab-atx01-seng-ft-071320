@@ -20,7 +20,7 @@ end
 
 def get_english_meaning(path, emoticon)
   library = load_library(path)
-  puts library.key(emoticon)
+  print library.key(emoticon)
 end
 
 get_english_meaning("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
