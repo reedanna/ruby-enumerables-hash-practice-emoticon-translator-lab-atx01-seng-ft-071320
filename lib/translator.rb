@@ -20,7 +20,7 @@ end
 
 def get_english_meaning(path, emoticon)
   library = load_library(path)
-  meaning = ""
+  meaning = "Sorry, that emoticon was not found"
   library.each do |key, value|
     if library[key][:japanese] == emoticon
       meaning = key
