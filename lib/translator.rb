@@ -26,7 +26,7 @@ def get_english_meaning(path, emoticon)
       meaning = key
     end
   end
-  print 
+  print meaning
 end
 
 get_english_meaning("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
