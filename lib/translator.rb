@@ -20,5 +20,7 @@ end
 
 def get_english_meaning(path, emoticon)
   library = load_library(path)
-  library.key(emoticon)
+  puts library.key(emoticon)
 end
+
+get_english_meaning()
