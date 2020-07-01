@@ -34,7 +34,7 @@ def get_japanese_emoticon(path, emoticon)
       meaning = key
     end
   end
-  if library[meaning][:japanese]
+  if library[meaning][:japanese] == true
     return library[meaning][:japanese]
   else
     return "Sorry, that emoticon was not found"
