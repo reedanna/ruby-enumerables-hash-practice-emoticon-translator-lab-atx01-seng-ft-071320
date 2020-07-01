@@ -22,11 +22,11 @@ def get_english_meaning(path, emoticon)
   library = load_library(path)
   meaning = ""
   library.each do |key, value|
-    if :japanese == emoticon
+    if library[key][:japanese] == emoticon
       meaning = key
     end
   end
-  print meaning
+  print 
 end
 
 get_english_meaning("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
