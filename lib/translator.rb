@@ -22,10 +22,7 @@ def get_english_meaning(path, emoticon)
   library = load_library(path)
   meaning = ""
   library.each do |key, value|
-    keys = key
-    if library[value].any?(emoticon)
-      meaning = keys
-    end
+    meaning = emoticon
   end
   meaning
 end
