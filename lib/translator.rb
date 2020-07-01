@@ -24,7 +24,7 @@ def get_english_meaning(path, emoticon)
   library.each do |key, value|
     meaning = emoticon
   end
-  meaning
+  print meaning
 end
 
 get_english_meaning("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
