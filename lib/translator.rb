@@ -8,7 +8,7 @@ def load_library
   #do what i did with the pigeons to rearrange stuff here
   library.each do |key, value|
     new_library[key] = {
-      english: library[key][0]
+      english: library[key][0],
       japanese: library[key][1]
     }
   end
