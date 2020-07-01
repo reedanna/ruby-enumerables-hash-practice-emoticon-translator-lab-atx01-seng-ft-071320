@@ -12,7 +12,7 @@ def load_library(path)
       japanese: library[key][1]
     }
   end
-  print new_library
+  new_library
 end
 
 def get_japanese_emoticon
@@ -22,5 +22,3 @@ end
 def get_english_meaning
   # code goes here
 end
-
-load_library
